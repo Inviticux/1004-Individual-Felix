@@ -1,0 +1,359 @@
+﻿* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.posting-system {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgb(255,128,0);
+    background: linear-gradient(150deg, rgba(255,128,0,1) 0%, rgba(161,0,152,1) 100%);
+}
+
+.posting-system > .head-of-website {
+    position: relative;
+    width: 100%;
+    height: 10%;
+    background-color: #545454;
+}
+
+.posting-system > .mid-of-website {
+    position: relative;
+    left: 25%;
+    width: 50%;
+    height: 85%;
+}
+
+.posting-system > .end-of-website {
+    position: relative;
+    width: 100%;
+    height: 5%;
+    background-color: #303030;
+}
+
+.text-head-of-website {
+    position: relative;
+    padding-left: 47%;
+    padding-top: 1%;
+}
+
+.text-left-end-of-website {
+    position: absolute;
+    padding-left: 20px;
+    padding-top: 15px;
+    color: #606060;
+    font-family: Verdana;
+    font-weight: bold;
+}
+
+.end-of-website .text-right-end-of-website {
+    padding: 15px;
+}
+
+.text-right-end-of-website {
+    position: absolute;
+    color: #606060;
+    font-family: Verdana;
+    font-weight: bold;
+    right: 0px;
+}
+
+.mid-of-website > .mid-postshow {
+    position: relative;
+    left: 55%;
+    top: -50%;
+    height: 60%;
+    width: 45%;
+    background-color: #545454;
+    border-radius: 10px;
+}
+
+.mid-postshow {
+    position: relative;
+}
+
+.mid-postshow > .postitself {
+    margin: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+.postitself {
+    position: absolute;
+    background: linear-gradient(150deg, rgba(255,128,0,1) 0%, rgba(161,0,152,1) 100%);
+    border-radius: 10px;
+}
+
+.postshowtext {
+    position: absolute;
+    color: white;
+    font-family: Verdana;
+    padding: 10px;
+    text-align: center;
+}
+
+.postitself > .postbox {
+    width: 90%;
+    height: 65%;
+}
+
+.postbox {
+    position: absolute;
+    top: 15%;
+    left: 5%;
+    background-color: #545454;
+    border-radius: 10px;
+}
+
+.postbox > .textofpost {
+    margin: 10px;
+}
+
+.textofpost {
+    color: white;
+    font-family: Verdana;
+    font-size: 98%;
+}
+
+.postitself > .postbuttons {
+    bottom: 10%;
+}
+
+.postbuttons > .likebutton {
+    margin: 10px;
+}
+
+.postbuttons > .dislikebutton {
+    margin: 10px;
+}
+
+.postbuttons > .keepbutton {
+    margin: 10px;
+}
+
+.likebutton {
+    position: absolute;
+    background-color: #555555;
+    border-color: rgb(255, 0, 102);
+    font-family: Verdana;
+    font-size: 98%;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    bottom: 0px;
+}
+
+.dislikebutton {
+    position: absolute;
+    background-color: #555555;
+    border-color: rgb(51, 51, 204);
+    font-family: Verdana;
+    font-size: 98%;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    bottom: 0px;
+    left: 28%;
+}
+
+.keepbutton {
+    position: absolute;
+    background-color: #555555;
+    border-color: rgb(255, 255, 0);
+    font-family: Verdana;
+    font-size: 98%;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    bottom: 0px;
+    right: 0px;
+}
+
+.mid-of-website > .mid-inputsection {
+    position: relative;
+    width: 45%;
+    height: 60%;
+    top: 10%;
+    background-color: #545454;
+    border-radius: 10px;
+}
+
+.mid-inputsection > .textpost-form {
+    padding: 2%;
+    width: 96%;
+    height: 86%;
+}
+
+.mid-inputsection > .textformbutton {
+    margin: 2%;
+    width: 96%;
+    height: 16%;
+}
+
+.textformbutton {
+    position: absolute;
+    bottom: 0%;
+    background-color: #555555;
+    border-color: #666666;
+    font-family: Verdana;
+    font-size: 98%;
+    color: white;
+    border-radius: 10px;
+}
+
+.textprompt {
+    color: white;
+    font-family: Verdana;
+    font-size: 98%;
+}
+
+.textpost-form > .postparagraph {
+    width: 96%;
+    height: 74%;
+}
+
+.postparagraph {
+    padding: 2%;
+    position: absolute;
+    background: linear-gradient(150deg, rgba(255,128,0,1) 0%, rgba(161,0,152,1) 100%);
+    border-color: #666666;
+    color: white;
+    font-family: Verdana;
+    font-size: 98%;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+/*The start of the background animation with the boxes*/
+.posting-system > .animationloaction {
+    width: 100%;
+    height: 100%;
+}
+
+.box-size {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.box-size li{
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 25px;
+    height: 25px;
+    background: rgba(255,255,255,0.2);
+    animation: animate 30s linear infinite;
+    bottom: -150px;
+}
+
+.box-size li:nth-child(1) {
+    left: 90%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+    animation-duration: 9s;
+}
+
+.box-size li:nth-child(2) {
+    left: 10%;
+    width: 90px;
+    height: 90px;
+    animation-delay: 1s;
+    animation-duration: 8s;
+}
+
+.box-size li:nth-child(3) {
+    left: 35%;
+    width: 15px;
+    height: 15px;
+    animation-delay: 2s;
+    animation-duration: 7s;
+}
+
+.box-size li:nth-child(4) {
+    left: 55%;
+    width: 22px;
+    height: 22px;
+    animation-delay: 3s;
+    animation-duration: 6s;
+}
+
+.box-size li:nth-child(5) {
+    left: 75%;
+    width: 40px;
+    height: 40px;
+    animation-delay: 4s;
+    animation-duration: 5s;
+}
+
+.box-size li:nth-child(6) {
+    left: 20%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 5s;
+    animation-duration: 4s;
+}
+
+.box-size li:nth-child(7) {
+    left: 77%;
+    width: 15px;
+    height: 15px;
+    animation-delay: 6s;
+    animation-duration: 3s;
+}
+
+.box-size li:nth-child(8) {
+    left: 45%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 7s;
+    animation-duration: 2s;
+}
+
+.box-size li:nth-child(9) {
+    left: 30%;
+    width: 35px;
+    height: 35px;
+    animation-delay: 8s;
+    animation-duration: 1s;
+}
+
+.box-size li:nth-child(10) {
+    left: 5%;
+    width: 130px;
+    height: 130px;
+    animation-delay: 9s;
+    animation-duration: 7s;
+}
+
+.box-size li:nth-child(11) {
+    left: 95%;
+    width: 130px;
+    height: 130px;
+    animation-delay: 10s;
+    animation-duration: 5s;
+}
+
+@keyframes animate {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-800px) rotate(360deg);
+        opacity: 0;
+    }
+}
